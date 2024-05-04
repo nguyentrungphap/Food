@@ -7,7 +7,6 @@ import { decreaseCount, increaseCount } from "../redux/action";
 import { connect } from "react-redux";
 
 function App(props) {
-  console.log("store", props);
   const handleIncrease = () => {
     props.increaseCount();
   };
@@ -31,13 +30,12 @@ function App(props) {
 function mapStatetoProps(state) {
   return {
     count: state.count.count,
-    cart: state.cart.cart,
   };
 }
-function mapDispathoProps(dispatch) {
+function mapDispatchToProps(dispatch) {
   return {
     increaseCount: () => store.dispatch(increaseCount()),
     decreaseCount: () => store.dispatch(decreaseCount()),
   };
 }
-export default connect(mapStatetoProps, mapDispathoProps)(App);
+export default connect(mapStatetoProps, mapDispatchToProps)(App);

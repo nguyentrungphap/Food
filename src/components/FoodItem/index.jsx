@@ -1,19 +1,20 @@
 import React from "react";
 import Style from "./style.module.scss";
 import { connect, useDispatch } from "react-redux";
-import { addtoCart } from "../../redux/action";
+import { ADD_TO_CART } from "../../redux/action";
 
-const FoodItem = ({ item, addtoCart }) => {
+const FoodItem = ({ item, ADD_TO_CART, Cart }) => {
   const dispatch = useDispatch();
-  const handleAddtoCart = () => {
+  const handleADD_TO_CART = () => {
     dispatch(
-      addtoCart({
+      ADD_TO_CART({
         id: item.id,
         name: item.name,
-        old_price: item.oldPrice,
-        new_price: item.newPrice,
+        old_price: item.old_price,
+        new_price: item.new_price,
       })
     );
+    console.log({ Cart });
   };
 
   return (
@@ -37,7 +38,7 @@ const FoodItem = ({ item, addtoCart }) => {
       </div>
       <div className={Style.Buy}>
         <button className={Style.BuyButton}>Buy</button>
-        <button onClick={handleAddtoCart}>Add to cart</button>
+        <button onClick={handleADD_TO_CART}>Add to cart</button>
       </div>
     </div>
   );
@@ -49,10 +50,10 @@ function mapStatetoProps(state) {
   };
 }
 
-function mapDispathoProps(dispatch) {
+function mapDispatchToProps(dispatch) {
   return {
-    addtoCart: (item) => dispatch(addtoCart(item)),
+    ADD_TO_CART: (item) => dispatch(ADD_TO_CART(item)),
   };
 }
 
-export default connect(mapStatetoProps, mapDispathoProps)(FoodItem);
+export default connect(mapStatetoProps, mapDispatchToProps)(FoodItem);

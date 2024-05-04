@@ -5,15 +5,14 @@ const initialState = {
 };
 
 export const CartReducer = (state = initialState, action) => {
-  console.log("action", action);
   switch (action.type) {
-    case Type.addtoCart: {
+    case Type.ADD_TO_CART: {
       return { cart: [...state.cart, action.payload] };
     }
-    case Type.removetoCart: {
-      console.log("removetoCart");
-      return state;
-    }
+    // case Type.REMOVE_TO_CART: {
+    //   console.log("removetoCart");
+    //   return state;
+    // }
     default:
       return state;
   }

@@ -12,15 +12,16 @@ export const decreaseCount = () => {
   };
 };
 
-export const addtoCart = (data) => {
+export const ADD_TO_CART = (data) => {
   return {
-    type: Type.addtoCart,
+    type: Type.ADD_TO_CART,
     payload: data,
   };
 };
-export const removetoCart = (data) => {
-  return {
-    type: Type.removetoCart,
-    payload: data,
-  };
-};
+
+// export const REMOVE_TO_CART = (data) => {
+//   return {
+//     type: Type.REMOVE_TO_CART,
+//     payload: data,
+//   };
+// };
