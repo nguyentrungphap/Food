@@ -1,10 +1,10 @@
 import { combineReducers, createStore } from "redux";
-import { CounterReducer } from "./coutReducer";
-import { CartReducer } from "./reducer";
+import cartReducer from "./cart/cartSlice";
+import productReducer from "./product/slice";
 
 const rootReducer = combineReducers({
-  count: CounterReducer,
-  cart: CartReducer,
+  cart: cartReducer,
+  product: productReducer,
 });
 
 export const store = createStore(rootReducer);

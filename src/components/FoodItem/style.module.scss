@@ -1,4 +1,4 @@
-.FoodItem {
+.foodItem {
   align-items: center;
   background-color: white;
   border-radius: 8px;
@@ -11,7 +11,7 @@
     object-fit: cover;
   }
 
-  .Info {
+  .info {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
       }
     }
   }
-  .Buy {
+  .buy {
     display: flex;
     justify-content: space-between;
     padding: 20px 10px;
@@ -56,7 +56,7 @@
       font-size: 16px;
       padding: 10px;
     }
-    .BuyButton {
+    .buyButton {
       background-color: red;
       color: white;
     }

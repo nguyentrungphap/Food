@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "cơm chiên",
+      "old_price": 25000,
+      "image": "product_1.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 2,
+      "name": "cháo",
+      "old_price": 30000,
+      "image": "product_2.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 3,
+      "name": "cơm chiên",
+      "old_price": 25000,
+      "image": "product_1.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 4,
+      "name": "cháo",
+      "old_price": 30000,
+      "image": "product_2.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 5,
+      "name": "cơm chiên",
+      "old_price": 25000,
+      "image": "product_1.jpg",
+      "new_price": 0
+    },
+    {
+      "id": 6,
+      "name": "cháo",
+      "old_price": 30000,
+      "image": "product_2.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 7,
+      "name": "cơm chiên",
+      "old_price": 25000,
+      "image": "product_1.jpg",
+      "new_price": 12000
+    },
+    {
+      "id": 8,
+      "name": "cháo",
+      "old_price": 30000,
+      "image": "product_2.jpg",
+      "new_price": 0
+    },
+    {
+      "id": 9,
+      "name": "cơm chiên",
+      "old_price": 25000,
+      "image": "product_1.jpg",
+      "new_price": 0
+    },
+    {
+      "id": 10,
+      "name": "cháo",
+      "old_price": 30000,
+      "image": "product_2.jpg",
+      "new_price": 12000
+    }
+  ]
+}
