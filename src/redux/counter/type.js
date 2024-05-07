@@ -1,0 +1,4 @@
+export const Type = {
+  INCREASE_COUNT: "INCREASE_COUNT",
+  DECREASE_COUNT: "DECREASE_COUNT",
+};
