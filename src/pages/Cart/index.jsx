@@ -1,21 +1,52 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectCartItems } from "../../redux/cart/selector";
+import { removeFromCart } from "../../redux/cart/cartSlice";
 
+import { selectProducts } from "../../redux/product/selector";
 import Style from "./style.module.scss";
 
 const Cart = () => {
-  const cartItems = useSelector(selectCartItems)
-
+  const cartItems = useSelector(selectCartItems);
+  const products = useSelector(selectProducts);
+  const dispatch = useDispatch();
+  console.log({ cartItems });
+  console.log({ products });
+  const handleRemoveFromCart = (id) => {
+    dispatch(
+      removeFromCart({
+        productId: id,
+      })
+    );
+  };
   const renderCartItems = () => {
-    return cartItems.map(item => {
-      return <div>
-        <p>{item.productId}</p>
-        <p>{item.quantity}</p>
-      </div>
-    })
-  }
-  
+    return cartItems.map((item, index) => {
+      const product = products[Number(item.productId) - 1];
+      if (item.productId === product.id) {
+        return (
+          <div className={`${Style.TopCart} ${Style.itemCart}`} key={index}>
+            <p>{product.name}</p>
+            <img src={product.image} alt={product.name} />
+            <p>
+              {product.new_price > 0 ? product.new_price : product.old_price}
+            </p>
+            <p>{item.quantity}</p>
+            <p>
+              Total:
+              {product.new_price > 0
+                ? product.new_price * item.quantity
+                : product.old_price * item.quantity}
+            </p>
+            <button onClick={() => handleRemoveFromCart(item.productId)}>
+              Remove
+            </button>
+          </div>
+        );
+      }
+      return;
+    });
+  };
+
   return (
     <div className={Style.Cart}>
       <h2>Your Shopping Cart</h2>

@@ -14,8 +14,13 @@ const FoodItem = ({ item }) => {
       })
     );
   };
-
-  const handleBuyProduct = () => {};
+  const handleBuyProduct = () => {
+    dispatch(
+      addToCart({
+        productId: item.id,
+      })
+    );
+  };
 
   const renderPriceSection = () => {
     return item.new_price > 0 ? (
@@ -36,9 +41,7 @@ const FoodItem = ({ item }) => {
       <div className={styles.info}>
         <h3>{item.name}</h3>
         <p>{item.description}</p>
-        <div className={styles.priceContainer}>
-          {renderPriceSection()}
-        </div>
+        <div className={styles.priceContainer}>{renderPriceSection()}</div>
       </div>
       <div className={styles.buy}>
         <button className={styles.buyButton} onClick={handleBuyProduct}>

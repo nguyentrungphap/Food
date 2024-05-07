@@ -5,7 +5,7 @@
       "name": "cơm chiên",
       "old_price": 25000,
       "image": "product_1.jpg",
-      "new_price": 12000
+      "new_price": 120000
     },
     {
       "id": 2,
@@ -69,6 +69,18 @@
       "old_price": 30000,
       "image": "product_2.jpg",
       "new_price": 12000
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Cháo",
+      "img": "product_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cơm",
+      "img": "product_2.jpg"
     }
   ]
 }
