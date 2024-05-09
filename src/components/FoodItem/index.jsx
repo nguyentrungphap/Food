@@ -3,9 +3,11 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart/cartSlice";
 
 import styles from "./style.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const FoodItem = ({ item }) => {
   const dispatch = useDispatch();
+  const navigator = useNavigate();
 
   const handleAddToCartClick = () => {
     dispatch(
@@ -20,6 +22,7 @@ const FoodItem = ({ item }) => {
         productId: item.id,
       })
     );
+    navigator("/cart");
   };
 
   const renderPriceSection = () => {

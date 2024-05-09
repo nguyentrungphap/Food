@@ -82,5 +82,19 @@
       "name": "Cơm",
       "img": "product_2.jpg"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "phapnguyen@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "email": "phapnguyen@gmail.com"
+    }
   ]
 }
