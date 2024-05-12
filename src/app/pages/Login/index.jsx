@@ -13,27 +13,19 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    getUserAccounts();
-  }, []);
-
-  const getUserAccounts = async () => {
-    const response = await getLoginsAPI();
-    const accounts = response.data;
-    dispatch(setLogins(accounts));
-  };
-
   const account = useSelector(selectLogin);
   console.log({ account });
   const handleSubmit = (event) => {
     event.preventDefault();
-    account.map((item) => {
-      if (name == item.username && password == item.password) {
-        navigate("/home");
-      } else {
-        toast.error("Wow so easy!");
-      }
-    });
+    if (
+      account.some(
+        (item) => item.username === name && item.password === password
+      )
+    ) {
+      navigate("/");
+    } else {
+      toast.error("User name or password wrong!");
+    }
   };
 
   return (

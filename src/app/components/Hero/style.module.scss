@@ -1,0 +1,38 @@
+.Hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: url("/header_img.png") no-repeat center center/cover;
+
+  .Content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

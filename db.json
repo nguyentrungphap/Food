@@ -96,5 +96,19 @@
       "password": "password2",
       "email": "phapnguyen@gmail.com"
     }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "productName": "cháo",
+      "price": 50000,
+      "quatity": 2
+    },
+    {
+      "id": 2,
+      "productName": "cháo",
+      "price": 150000,
+      "quatity": 1
+    }
   ]
 }

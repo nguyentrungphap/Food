@@ -7,11 +7,10 @@ import { selectProducts } from "../../redux/product/selector";
 import Style from "./style.module.scss";
 
 const Cart = () => {
-  const cartItems = useSelector(selectCartItems);
+  const Items = useSelector(selectCartItems);
   const products = useSelector(selectProducts);
   const dispatch = useDispatch();
-  console.log({ cartItems });
-  console.log({ products });
+
   const handleRemoveFromCart = (id) => {
     dispatch(
       removeFromCart({
@@ -20,7 +19,7 @@ const Cart = () => {
     );
   };
   const renderCartItems = () => {
-    return cartItems.map((item, index) => {
+    return Items.map((item, index) => {
       const product = products[Number(item.productId) - 1];
       if (item.productId === product.id) {
         return (

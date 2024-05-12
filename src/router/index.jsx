@@ -1,44 +1,91 @@
 import { createBrowserRouter } from "react-router-dom";
-import Cart from "../pages/Cart";
 
-import PageNotFound from "../pages/PageNotFound";
-import Home from "../pages/Home";
-import Login from "../pages/Login";
-import ApplicationLayout from "./ApplicationLayout";
-import EmptyLayout from "./EmptyLayout";
-import Register from "../pages/Register";
+import Home from "../app/pages/Home";
+import Register from "../app/pages/Register";
+import PageNotFound from "./../app/pages/PageNotFound/index";
+import Cart from "./../app/pages/Cart/index";
+import Login from "../app/pages/Login";
+import Shop from "./Shop";
+import ApplicationLayout from "./Shop/ApplicationLayout";
+import EmptyLayout from "./Shop/EmptyLayout";
+import Admin from "./Admin";
+import StoreApp from "./StoreApp";
+import HomeAdmin from "../admin/pages/HomeAdmin";
+import ApplicationLayoutAdmin from "./Admin/ApplicationLayoutAdmin";
+import CartAdmin from "../admin/pages/CartAdmin";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ApplicationLayout />,
+    element: <StoreApp />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        element: <Shop />,
+        children: [
+          {
+            element: <ApplicationLayout />,
+            children: [
+              {
+                path: "/",
+                element: <Home />,
+              },
+              {
+                path: "cart",
+                element: <Cart />,
+              },
+            ],
+          },
+          {
+            element: <EmptyLayout />,
+            children: [
+              {
+                path: "login",
+                element: <Login />,
+              },
+              {
+                path: "register",
+                element: <Register />,
+              },
+            ],
+          },
+        ],
       },
       {
-        path: "cart",
-        element: <Cart />,
+        path: "StoreAdmin",
+        element: <Admin />,
+        children: [
+          {
+            element: <ApplicationLayoutAdmin />,
+            children: [
+              {
+                path: "",
+                element: <HomeAdmin />,
+              },
+              {
+                path: "CartAdmin",
+                element: <CartAdmin />,
+              },
+            ],
+          },
+          {
+            element: <EmptyLayout />,
+            children: [
+              {
+                path: "login",
+                element: <Login />,
+              },
+              {
+                path: "register",
+                element: <Register />,
+              },
+            ],
+          },
+        ],
       },
     ],
   },
   {
-    path: "/",
-    element: <EmptyLayout />,
-    children: [
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
-    ],
-  },
-  {
-    path: "*",
+    path: "*", // For unmatched paths
     element: <PageNotFound />,
   },
 ]);

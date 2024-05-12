@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectCategories } from "./../../redux/category/selector";
+import { selectCategories } from "../../redux/category/selector";
 import Style from "./style.module.scss";
 
 const ExploreMenu = () => {

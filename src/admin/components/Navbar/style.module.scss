@@ -1,0 +1,40 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0px;
+  background-color: #333;
+  color: white;
+  height: 100%;
+  .Logo img {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .Links {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li {
+      padding: 10px 10px;
+      &:hover {
+        background-color: #fff;
+      }
+      &:hover a {
+        color: black !important;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Arial", sans-serif;
+      }
+    }
+  }
+  .Users {
+    display: flex;
+    gap: 15px;
+    Link {
+      color: white;
+    }
+  }
+}
