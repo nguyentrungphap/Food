@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import { getCartAdminAPI } from "../../admin/api/cart";
 import { getProductsAPI } from "../../app/api/product";
 import { getCategoriesAPI } from "../../app/api/categories";
 import { setCategories } from "../../app/redux/category/slice";
 import { setProducts } from "../../app/redux/product/slice";
-import { setCartAdmin } from "../../admin/redux/cartAdmin/cartAdminSlice";
 import { useDispatch } from "react-redux";
 import { setLogins } from "../../app/redux/login/loginSlice";
-import { getLoginsAPI } from "./../../app/api/auth/index";
+import { getCustomersApi } from "../../app/api/customers";
 
 function StoreApp() {
   const dispatch = useDispatch();
@@ -16,19 +14,11 @@ function StoreApp() {
   useEffect(() => {
     getProducts();
     getCategories();
-    getCartAdmin();
     getUserAccounts();
   }, []);
 
-  const getCartAdmin = async () => {
-    const response = await getCartAdminAPI();
-    const cart = response.data;
-    console.log("test", cart);
-    dispatch(setCartAdmin(cart));
-  };
-
   const getUserAccounts = async () => {
-    const response = await getLoginsAPI();
+    const response = await getCustomersApi();
     const accounts = response.data;
     dispatch(setLogins(accounts));
   };

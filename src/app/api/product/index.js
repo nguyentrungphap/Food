@@ -1,8 +1,8 @@
 import instance from "..";
 
 export const getProductsAPI = () => {
-  return instance.get("/products");
+  return instance.get("/Products");
 };
 export const postProductsAPI = () => {
-  return instance.post("/products", {});
+  return instance.post("/Products", {});
 };

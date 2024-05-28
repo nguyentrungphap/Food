@@ -1,114 +1,248 @@
 {
-  "products": [
+  "Products": [
     {
-      "id": 1,
-      "name": "cơm chiên",
-      "old_price": 25000,
-      "image": "product_1.jpg",
-      "new_price": 120000
+      "ProductID": 1,
+      "ProductName": "Áo thun tay dài",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 2,
-      "name": "cháo",
-      "old_price": 30000,
-      "image": "product_2.jpg",
-      "new_price": 12000
+      "ProductID": 2,
+      "ProductName": "Áo sơ mi",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 3,
-      "name": "cơm chiên",
-      "old_price": 25000,
-      "image": "product_1.jpg",
-      "new_price": 12000
+      "ProductID": 3,
+      "ProductName": "Quần đùi",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 4,
-      "name": "cháo",
-      "old_price": 30000,
-      "image": "product_2.jpg",
-      "new_price": 12000
+      "ProductID": 4,
+      "ProductName": "Áo thun tay ngắn",
+      "ProductImage": "product.jpg",
+      "Price": 100000,
+      "Sale": 50000,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        },
+        {
+          "Id": 2,
+          "SizeName": "M"
+        },
+        {
+          "Id": 3,
+          "SizeName": "L"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 5,
-      "name": "cơm chiên",
-      "old_price": 25000,
-      "image": "product_1.jpg",
-      "new_price": 0
+      "ProductID": 5,
+      "ProductName": "Quần tây",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 6,
-      "name": "cháo",
-      "old_price": 30000,
-      "image": "product_2.jpg",
-      "new_price": 12000
+      "ProductID": 6,
+      "ProductName": "Quần jean ngắn",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     },
     {
-      "id": 7,
-      "name": "cơm chiên",
-      "old_price": 25000,
-      "image": "product_1.jpg",
-      "new_price": 12000
-    },
-    {
-      "id": 8,
-      "name": "cháo",
-      "old_price": 30000,
-      "image": "product_2.jpg",
-      "new_price": 0
-    },
-    {
-      "id": 9,
-      "name": "cơm chiên",
-      "old_price": 25000,
-      "image": "product_1.jpg",
-      "new_price": 0
-    },
-    {
-      "id": 10,
-      "name": "cháo",
-      "old_price": 30000,
-      "image": "product_2.jpg",
-      "new_price": 12000
+      "ProductID": 7,
+      "ProductName": "Quần jean dài",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
     }
   ],
-  "categories": [
+  "Customers": [
     {
-      "id": 1,
-      "name": "Cháo",
-      "img": "product_1.jpg"
+      "CustomerID": 1,
+      "CustomerName": "user1",
+      "Customerpassword": "password1",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 1
     },
     {
-      "id": 2,
-      "name": "Cơm",
-      "img": "product_2.jpg"
+      "CustomerID": 2,
+      "CustomerName": "user2",
+      "Customerpassword": "password2",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 2
+    },
+    {
+      "CustomerID": 3,
+      "CustomerName": "user3",
+      "Customerpassword": "password3",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 3
     }
   ],
-  "users": [
+  "Orders": [
     {
-      "id": 1,
-      "username": "user1",
-      "password": "password1",
-      "email": "phapnguyen@gmail.com"
-    },
-    {
-      "id": 2,
-      "username": "user2",
-      "password": "password2",
-      "email": "phapnguyen@gmail.com"
+      "OrderDetailID": 1,
+      "CustomerID": 1,
+      "OrderDate": "05-02-2024",
+      "Status": 2
     }
   ],
-  "carts": [
+  "OrderDetails": [
     {
-      "id": 1,
-      "productName": "cháo",
-      "price": 50000,
-      "quatity": 2
+      "OrderDetailID": 1,
+      "OrderID": 1,
+      "product": [
+        { "ProductID": 1, "Quantity": 2, "Price": 200000 },
+        { "ProductID": 2, "Quantity": 2, "Price": 200000 }
+      ]
+    }
+  ],
+  "Categories": [
+    {
+      "CategoryID": 1,
+      "CategoryName": "Áo",
+      "Description": "Áo đẹp"
     },
     {
-      "id": 2,
-      "productName": "cháo",
-      "price": 150000,
-      "quatity": 1
+      "CategoryID": 2,
+      "CategoryName": "Quần dài",
+      "Description": "test"
+    },
+    {
+      "CategoryID": 3,
+      "CategoryName": "Quần Short",
+      "Description": "test"
     }
   ]
 }

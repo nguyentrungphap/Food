@@ -8,11 +8,8 @@ import Login from "../app/pages/Login";
 import Shop from "./Shop";
 import ApplicationLayout from "./Shop/ApplicationLayout";
 import EmptyLayout from "./Shop/EmptyLayout";
-import Admin from "./Admin";
 import StoreApp from "./StoreApp";
-import HomeAdmin from "../admin/pages/HomeAdmin";
-import ApplicationLayoutAdmin from "./Admin/ApplicationLayoutAdmin";
-import CartAdmin from "../admin/pages/CartAdmin";
+import DetailProduct from "../app/pages/DetailProduct";
 
 const router = createBrowserRouter([
   {
@@ -33,37 +30,9 @@ const router = createBrowserRouter([
                 path: "cart",
                 element: <Cart />,
               },
-            ],
-          },
-          {
-            element: <EmptyLayout />,
-            children: [
               {
-                path: "login",
-                element: <Login />,
-              },
-              {
-                path: "register",
-                element: <Register />,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        path: "StoreAdmin",
-        element: <Admin />,
-        children: [
-          {
-            element: <ApplicationLayoutAdmin />,
-            children: [
-              {
-                path: "",
-                element: <HomeAdmin />,
-              },
-              {
-                path: "CartAdmin",
-                element: <CartAdmin />,
+                path: "detailProduct/:id",
+                element: <DetailProduct />,
               },
             ],
           },
@@ -85,7 +54,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "*", // For unmatched paths
+    path: "*",
     element: <PageNotFound />,
   },
 ]);

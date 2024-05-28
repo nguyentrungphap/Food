@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Style from "./style.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLogin } from "../../redux/login/selector";
-import { getLoginsAPI } from "../../api/auth";
-import { setLogins } from "../../redux/login/loginSlice";
 
 function Register() {
   const [username, setUsername] = useState("");

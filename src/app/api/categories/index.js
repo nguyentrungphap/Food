@@ -1,5 +1,5 @@
 import instance from "..";
 
 export const getCategoriesAPI = () => {
-  return instance.get("/categories");
+  return instance.get("/Categories");
 };

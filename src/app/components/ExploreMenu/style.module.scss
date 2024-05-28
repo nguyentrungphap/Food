@@ -16,22 +16,12 @@
       display: flex;
       justify-content: center;
       gap: 1rem;
-      .Item {
-        img {
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-        }
 
+      .Item {
+        cursor: pointer;
         h3 {
           color: #007bff;
           padding: 0.5rem;
-        }
-
-        p {
-          padding: 0 0.5rem 1rem;
-          font-size: 0.9rem;
-          color: #666;
         }
       }
     }

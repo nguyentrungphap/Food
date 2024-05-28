@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Style from "./style.module.scss";
 import { Link, useNavigate } from "react-router-dom";
-import { getLoginsAPI } from "../../api/auth";
-import { setLogins } from "../../redux/login/loginSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLogin } from "../../redux/login/selector";
 import { ToastContainer, toast } from "react-toastify";

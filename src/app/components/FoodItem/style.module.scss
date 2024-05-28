@@ -44,20 +44,22 @@
     }
   }
   .buy {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px;
+    margin: 0px 10px;
+    a {
+      text-decoration: none;
+    }
     button {
-      max-width: 200px;
-      width: 45%;
+      margin: 5px 0;
+      display: block;
+      width: 100%;
       border: none;
       cursor: pointer;
       font-weight: 500;
       font-size: 16px;
       padding: 10px;
     }
-    .buyButton {
-      background-color: red;
+    .detailButton {
+      background-color: rgb(18, 207, 65);
       color: white;
     }
   }
