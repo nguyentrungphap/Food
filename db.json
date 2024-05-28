@@ -1,0 +1,248 @@
+{
+  "Products": [
+    {
+      "ProductID": 1,
+      "ProductName": "Áo thun tay dài",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 2,
+      "ProductName": "Áo sơ mi",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 3,
+      "ProductName": "Quần đùi",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 4,
+      "ProductName": "Áo thun tay ngắn",
+      "ProductImage": "product.jpg",
+      "Price": 100000,
+      "Sale": 50000,
+      "Description": "ádasd",
+      "CategoryID": 1,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        },
+        {
+          "Id": 2,
+          "SizeName": "M"
+        },
+        {
+          "Id": 3,
+          "SizeName": "L"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 5,
+      "ProductName": "Quần tây",
+      "ProductImage": "product.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 6,
+      "ProductName": "Quần jean ngắn",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    },
+    {
+      "ProductID": 7,
+      "ProductName": "Quần jean dài",
+      "ProductImage": "product_quan.jpg",
+      "Price": 1,
+      "Sale": 1,
+      "Description": "ádasd",
+      "CategoryID": 2,
+      "Size": [
+        {
+          "Id": 1,
+          "SizeName": "S"
+        }
+      ],
+      "Color": [
+        {
+          "Id": 1,
+          "ColerName": "black"
+        },
+        {
+          "Id": 2,
+          "ColerName": "carameo"
+        }
+      ]
+    }
+  ],
+  "Customers": [
+    {
+      "CustomerID": 1,
+      "CustomerName": "user1",
+      "Customerpassword": "password1",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 1
+    },
+    {
+      "CustomerID": 2,
+      "CustomerName": "user2",
+      "Customerpassword": "password2",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 2
+    },
+    {
+      "CustomerID": 3,
+      "CustomerName": "user3",
+      "Customerpassword": "password3",
+      "CustomerEmail": "phapnguyen@gmail.com",
+      "CustomerAddress": "296a Dương Đình Hội, TP Hồ Chí Minh",
+      "access": 3
+    }
+  ],
+  "Orders": [
+    {
+      "OrderDetailID": 1,
+      "CustomerID": 1,
+      "OrderDate": "05-02-2024",
+      "Status": 2
+    }
+  ],
+  "OrderDetails": [
+    {
+      "OrderDetailID": 1,
+      "OrderID": 1,
+      "product": [
+        { "ProductID": 1, "Quantity": 2, "Price": 200000 },
+        { "ProductID": 2, "Quantity": 2, "Price": 200000 }
+      ]
+    }
+  ],
+  "Categories": [
+    {
+      "CategoryID": 1,
+      "CategoryName": "Áo",
+      "Description": "Áo đẹp"
+    },
+    {
+      "CategoryID": 2,
+      "CategoryName": "Quần dài",
+      "Description": "test"
+    },
+    {
+      "CategoryID": 3,
+      "CategoryName": "Quần Short",
+      "Description": "test"
+    }
+  ]
+}

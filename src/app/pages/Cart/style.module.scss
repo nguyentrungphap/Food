@@ -1,0 +1,27 @@
+.Cart {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .CartContent {
+    padding: 20px 50px;
+    margin-top: 50px;
+    .TopCart {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin: 10px 0;
+      padding: 0 20px;
+    }
+    .itemCart {
+      img {
+        height: 50px;
+      }
+    }
+  }
+}

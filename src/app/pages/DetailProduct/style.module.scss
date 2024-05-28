@@ -1,0 +1,111 @@
+.wrapper {
+  margin: 50px;
+  .detailProduct {
+    display: flex;
+
+    .left {
+      width: 55%;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 13px;
+        color: rgb(175, 179, 179);
+      }
+      p {
+        font-size: 15px;
+      }
+      .sale {
+        display: flex;
+        .price {
+          font-weight: 600;
+          color: red;
+          text-decoration: unset;
+        }
+        p {
+          font-size: 20px;
+          text-decoration: line-through;
+          color: rgb(156, 148, 148);
+          font-weight: 200;
+          margin: 0 5px;
+        }
+      }
+      .quatity {
+        display: flex;
+        button {
+          padding: 5px;
+          width: 30px;
+          font-weight: 600;
+          font-size: 18;
+          border: 1px solid black;
+          background-color: rgb(224, 222, 214);
+          color: black;
+          &:hover {
+            background-color: rgb(156, 148, 148);
+          }
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          color: black;
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+          font-size: 17px;
+        }
+      }
+      button {
+        background-color: red;
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        border: unset;
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+    }
+    .Size {
+      display: flex;
+      gap: 5px;
+      span {
+        display: flex;
+        padding: 8px 13px;
+        border: 1px solid rgb(128, 124, 124);
+        color: black;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+    .Color {
+      display: flex;
+      gap: 5px;
+      span {
+        cursor: pointer;
+        padding: 20px;
+      }
+      .black {
+        background-color: black;
+      }
+      .carameo {
+        background-color: #ffd59a;
+      }
+    }
+  }
+  .descript {
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      padding: 20px 10px;
+      background: rgb(245, 238, 238);
+    }
+  }
+}
